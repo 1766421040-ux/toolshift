@@ -8,7 +8,7 @@ user_authorized:
   github_owner: 1766421040-ux
   github_visibility: public
   paid_compute: false
-stage: validation_and_publication
+stage: published_v0_1
 resource:
   design_target: single_24GB_GPU
   available_host: Apple_M4_Pro_24GB_unified_memory
@@ -18,7 +18,8 @@ hypotheses:
   H2: Safety must include future common completion, not only immediate invariant checks.
   H3: Learned acquisition outperforms strong deployable static policies at matched safe completion.
 claims:
-  engineering_complete: false
+  engineering_complete: true
+  engineering_scope: bounded_finite_world_v0_1
   llm_training_executed: true
   benchmark_results_available: true
   novelty_established: false
@@ -63,6 +64,16 @@ scope:
   cuda_qlora: not_run
   diagnostic_structure_holdout_learning: not_run
   all_planned_teacher_ablations: not_run
-next:
-  - Audit published files, publish source and evidence, verify GitHub CI.
+publication:
+  repository: https://github.com/1766421040-ux/toolshift
+  visibility: public
+  verified_code_commit: 02db41e55d458930bb5cc9721ff691802608bdb7
+  downloaded_files: 147
+  byte_identical_to_local_source_snapshot: true
+  downloaded_cli_generate_evaluate_report: passed
+  github_ci_python39_python312: passed
+  evidence: provenance/publication_validation.json
+next_research_not_executed:
+  - Independently held-out evidence structures with strong compiled-tree controls.
+  - Multi-seed teacher ablations and larger models if adequate compute is available.
 

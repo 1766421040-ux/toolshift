@@ -1,0 +1,24 @@
+session:
+  id: "2026-10-20_001"
+  timestamp: "2026-10-20"
+  summary: Post-task archive of P2 implementation, experiments and public delivery.
+events_logged:
+  - {type: decision, id: N01, provenance: user, summary: Select P2 and public GitHub publication.}
+  - {type: experiment, id: N02, provenance: ai-executed, summary: Run frozen CPU comparisons.}
+  - {type: pivot, id: N03, provenance: ai-suggested, summary: Add a separate coupled evidence diagnostic.}
+  - {type: experiment, id: N04, provenance: ai-executed, summary: Run five diagnostic policies.}
+  - {type: experiment, id: N05, provenance: ai-executed, summary: Train and evaluate one real LoRA pilot.}
+  - {type: heuristic, id: H01, provenance: ai-executed, summary: Validate supervised-position logits after MPS OOM.}
+ai_actions:
+  - action: Implement, validate and publish source, synthetic data evidence and portable model adapter.
+    provenance: ai-executed
+    files_changed: [src/, tests/, configs/, scripts/, experiments/, docs/, artifacts/]
+claims_touched:
+  - {id: C01, action: advanced, provenance: ai-suggested}
+  - {id: C02, action: advanced, provenance: ai-suggested}
+  - {id: C03, action: weakened, provenance: ai-suggested}
+open_threads:
+  - Learning value on independent evidence structures remains unproven.
+  - Unknown supports and external database benchmarks are outside v0.1.
+ai_suggestions_pending:
+  - Prelock multi-seed teacher comparisons against exact compiled trees before further learning claims.

@@ -7,9 +7,11 @@ repair, and the first complete CPU results. It does not include the later
 adapter export or publication commit.
 
 The GitHub repository was created in the authenticated browser and populated
-through the connected GitHub Git Data API because command-line HTTPS/SSH
-credentials were unavailable. Its publication commit therefore has a different
-history. The bundle preserves the original commit references cited in experiment
+through the connected GitHub Git Data API; the final adapter binary was uploaded
+through the authenticated browser because the API transport could not accept its
+encoded payload. Command-line HTTPS/SSH credentials were unavailable. The
+publication commits therefore have a different history. The bundle preserves
+the original commit references cited in experiment
 manifests; it is not an independent timestamp/notarization service.
 
 Verify or inspect it without executing project code:

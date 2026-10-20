@@ -78,3 +78,18 @@ world/parameter rollouts match finite-oracle calculations. Browser testing
 verified both successful adapted writes and failed legacy writes. The public
 repository includes actual metrics and limitations, not only success demos.
 
+The Python 3.12 environment with training dependencies passed all 84 tests,
+including the real tiny-model training/resume check. The public repository
+was then downloaded into a fresh checkout at `02db41e`. All 147 tracked files
+(29,947,472 bytes) matched the local delivery snapshot `d906769` by SHA-256.
+The fresh checkout passed 83 standard-library tests with one optional HF
+test skipped. Its generate/evaluate/report smoke run completed 68 test
+episodes with 60 robust successes, eight pauses and no invariant violations.
+GitHub CI passed on Python 3.9 and 3.12. The verification record is
+[publication_validation.json](provenance/publication_validation.json).
+
+The v0.1 engineering delivery is complete within the finite-world scope.
+This does not establish H3, broad external benchmark parity or CUDA results.
+The post-task [research archive](ara/PAPER.md) preserves the unsupported
+learning hypothesis, implementation repair and conditions for reopening it.
+

@@ -1,0 +1,53 @@
+tree:
+  - id: N01
+    type: decision
+    title: Implement and publish P2
+    provenance: user
+    timestamp: "2026-10-20"
+    route_refs: [P2_action_sufficient_evidence_acquisition]
+    choice: Complete the second proposal and publish a public portfolio repository.
+    alternatives: [The two other previously proposed projects]
+    evidence: User selected P2 and confirmed owner 1766421040-ux and public visibility.
+    selection:
+      status: user_confirmed
+    children:
+      - id: N02
+        type: experiment
+        title: Frozen finite-world CPU benchmark
+        provenance: ai-executed
+        timestamp: "2026-10-20"
+        result: Static equals the finite oracle; query cost is 60.78 percent below full refresh. Learned policies do not improve it.
+        evidence: [C01, C03, experiments/cpu/]
+        children:
+          - id: N03
+            type: pivot
+            title: Test coupled evidence structures separately
+            provenance: ai-suggested
+            timestamp: "2026-10-20"
+            from: Fixed task-relevant query catalogue
+            to: Controlled support partitions and nonuniform query costs
+            trigger: A strong static policy explains all v1 rule gains.
+            children:
+              - id: N04
+                type: experiment
+                title: Coupled-query diagnostic comparison
+                provenance: ai-executed
+                timestamp: "2026-10-20"
+                result: Exact action trees beat exact version trees in 17 of 67 cases; all methods complete all worlds, and exact trees remain small.
+                evidence: [C01, experiments/diagnostic_graph/]
+      - id: N05
+        type: experiment
+        title: Real MPS LoRA pilot
+        provenance: ai-executed
+        timestamp: "2026-10-20"
+        result: Completed 200 steps after a recorded OOM repair; 23 actual and 8 robust successes among 51 locked tasks, zero queries.
+        evidence: [C03, H01, experiments/lora_main/]
+        failure:
+          kind: condition_matched_counterevidence
+          conditions: One seed, 135M model, 400 training-record exposures, finite candidate scoring.
+          evidence_refs: [experiments/lora_main/comparison.json]
+        selection:
+          status: provisional
+          reason: Do not claim learned acquisition improves strong static policies.
+          alternatives_considered: [Larger models, teacher ablations, structure-held-out training]
+          reopen_if: New prelocked multi-seed results beat cheap compiled trees at matched audited safe completion.

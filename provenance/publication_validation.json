@@ -1,0 +1,41 @@
+{
+  "scope": "Published executable source, evidence and adapter; subsequent documentation-only commits are outside this byte comparison.",
+  "date": "2026-10-20",
+  "repository": "https://github.com/1766421040-ux/toolshift",
+  "public_commit": "02db41e55d458930bb5cc9721ff691802608bdb7",
+  "local_development_commit": "d9067694bf198b070517ff70b6f5d746c68f747e",
+  "tracked_files": 147,
+  "total_bytes": 29947472,
+  "path_sets_equal": true,
+  "sha256_equal_for_every_file": true,
+  "adapter_sha256": "7db5f902b6e56b5441aa72ea2e31480ebc9205fd7ea8c939afa0204df3372df2",
+  "fresh_checkout_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m unittest discover -s tests -v",
+    "total": 84,
+    "passed": 83,
+    "skipped": 1,
+    "skip_reason": "Optional HF test requires training dependencies.",
+    "seconds": 13.343
+  },
+  "fresh_checkout_cli": {
+    "generate_seeds": 3,
+    "source_groups": 9,
+    "episodes": 113,
+    "decision_records": 153,
+    "policy": "static",
+    "split": "test",
+    "evaluated_episodes": 68,
+    "actual_successes": 60,
+    "robust_successes": 60,
+    "pauses": 8,
+    "invariant_violations": 0,
+    "report_bytes": 25690,
+    "all_exit_codes": 0
+  },
+  "github_ci": {
+    "run_url": "https://github.com/1766421040-ux/toolshift/actions/runs/39420535385",
+    "conclusion": "success",
+    "python_versions": ["3.9", "3.12"],
+    "checks": ["install", "unittest", "generate", "evaluate"]
+  }
+}

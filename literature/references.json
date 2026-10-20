@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0",
+  "project": "ToolShift",
+  "audited_on": "2026-10-20",
+  "audit_scope": "7 public repositories, 30 refreshed text/source assets; independently authored project data and code",
+  "snapshot_note": "Source links point to main and can change. Each freshly read source has a SHA-256 content hash and fetch timestamp; cached Git tree hashes are not asserted as commit SHAs. No repository code was executed for this audit.",
+  "references": [
+    {
+      "id": "toolsandbox",
+      "title": "ToolSandbox",
+      "repo": "apple-aiml-research/ToolSandbox",
+      "url": "https://github.com/apple-aiml-research/ToolSandbox",
+      "license_scope": "Apple custom permissive",
+      "role": "stateful evaluation",
+      "evidence_level": "README and selected actual source files read; not runtime reproduced",
+      "mechanism": "Polars indexed snapshots; milestone/minefield/guardrail predicates",
+      "toolshift_use": "Inspect state effects, separate process invariants and final goals; our storage is independently implemented SQLite",
+      "limitation": "Does not prove our oracle or learned query policy. No scenarios executed here.",
+      "sources": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/apple-aiml-research/ToolSandbox/blob/main/LICENSE",
+          "raw_url": "https://raw.githubusercontent.com/apple-aiml-research/ToolSandbox/main/LICENSE",
+          "sha256": "2283d5566b38210fbfb9fcb06619f1d0a8101bff9df974ea8afc3393508e9015",
+          "bytes": 2668,
+          "verified_at": "2026-10-20T10:58:08.383079+00:00"
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/apple-aiml-research/ToolSandbox/blob/main/README.md",
+          "raw_url": "https://raw.githubusercontent.com/apple-aiml-research/ToolSandbox/main/README.md",
+          "sha256": "0e5cfb9077769e2dcbe74dbfc8b8fac8314d8a213ab34364ab6b2ecaf47d8fe8",
+          "bytes": 48824,
+          "verified_at": "2026-10-20T10:58:08.866858+00:00"
+        },
+        {
+          "path": "tool_sandbox/common/evaluation.py",
+          "url": "https://github.com/apple-aiml-research/ToolSandbox/blob/main/tool_sandbox/common/evaluation.py",
+          "raw_url": "https://raw.githubusercontent.com/apple-aiml-research/ToolSandbox/main/tool_sandbox/common/evaluation.py",
+          "sha256": "0425cff032bd1ca2ebe8cc1c875cdf2ea86463af24b2940734007d938e516ab3",
+          "bytes": 56027,
+          "verified_at": "2026-10-20T10:58:08.696851+00:00"
+        },
+        {
+          "path": "tool_sandbox/common/execution_context.py",
+          "url": "https://github.com/apple-aiml-research/ToolSandbox/blob/main/tool_sandbox/common/execution_context.py",
+          "raw_url": "https://raw.githubusercontent.com/apple-aiml-research/ToolSandbox/main/tool_sandbox/common/execution_context.py",
+          "sha256": "a18f54e157b92fa011e84780bc33941ea0635ad70ab4b38e7408beedc6221437",
+          "bytes": 35461,
+          "verified_at": "2026-10-20T10:58:08.487871+00:00"
+        },
+        {
+          "path": "tool_sandbox/scenarios/__init__.py",
+          "url": "https://github.com/apple-aiml-research/ToolSandbox/blob/main/tool_sandbox/scenarios/__init__.py",
+          "raw_url": "https://raw.githubusercontent.com/apple-aiml-research/ToolSandbox/main/tool_sandbox/scenarios/__init__.py",
+          "sha256": "113cc01d10bb1630a93e09785893235ae4a3863d3a61542839eeb2791914724a",
+          "bytes": 5572,
+          "verified_at": "2026-10-20T10:58:08.506753+00:00"
+        },
+        {
+          "path": "tool_sandbox/scenarios/base_scenarios.py",
+          "url": "https://github.com/apple-aiml-research/ToolSandbox/blob/main/tool_sandbox/scenarios/base_scenarios.py",
+          "raw_url": "https://raw.githubusercontent.com/apple-aiml-research/ToolSandbox/main/tool_sandbox/scenarios/base_scenarios.py",
+          "sha256": "226bc95508de98b9abda46d209e8a7d6232b9afeae9c949021198916c4401f9d",
+          "bytes": 10833,
+          "verified_at": "2026-10-20T10:58:08.805500+00:00"
+        }
+      ]
+    },
+    {
+      "id": "appworld",
+      "title": "AppWorld",
+      "repo": "StonyBrookNLP/appworld",
+      "url": "https://github.com/StonyBrookNLP/appworld",
+      "license_scope": "Apache-2.0 infrastructure; separate encrypted-redistribution condition for bundled assets",
+      "role": "cross-app state evaluation",
+      "evidence_level": "README and selected actual source files read; not runtime reproduced",
+      "mechanism": "Task.load and ModelCollectionPair; private ground truth is evaluator-only",
+      "toolshift_use": "Separate public task context from hidden evaluation; independently generate all fixtures",
+      "limitation": "No bundled task, app implementation, database, solution or private test asset is copied.",
+      "sources": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/StonyBrookNLP/appworld/blob/main/README.md",
+          "raw_url": "https://raw.githubusercontent.com/StonyBrookNLP/appworld/main/README.md",
+          "sha256": "f4049141b6e520217395b7ccd9f27048c8e0f90331690dcbef300d2bc4ff7bdd",
+          "bytes": 81334,
+          "verified_at": "2026-10-20T10:58:10.746002+00:00"
+        },
+        {
+          "path": "guides/generating_base_database_and_tasks.md",
+          "url": "https://github.com/StonyBrookNLP/appworld/blob/main/guides/generating_base_database_and_tasks.md",
+          "raw_url": "https://raw.githubusercontent.com/StonyBrookNLP/appworld/main/guides/generating_base_database_and_tasks.md",
+          "sha256": "5af30ce17068543c4ab58607a9ed63609c11ec51d49c1984bb994acf5ba1feea",
+          "bytes": 4221,
+          "verified_at": "2026-10-20T10:58:10.089229+00:00"
+        },
+        {
+          "path": "src/appworld/collections/models.py",
+          "url": "https://github.com/StonyBrookNLP/appworld/blob/main/src/appworld/collections/models.py",
+          "raw_url": "https://raw.githubusercontent.com/StonyBrookNLP/appworld/main/src/appworld/collections/models.py",
+          "sha256": "8b2fac59d77c887ab08fe4092ec0811952d051bd56551dc239332c556df136e4",
+          "bytes": 24304,
+          "verified_at": "2026-10-20T10:58:10.667204+00:00"
+        },
+        {
+          "path": "src/appworld/evaluator.py",
+          "url": "https://github.com/StonyBrookNLP/appworld/blob/main/src/appworld/evaluator.py",
+          "raw_url": "https://raw.githubusercontent.com/StonyBrookNLP/appworld/main/src/appworld/evaluator.py",
+          "sha256": "bde9deb3b1e6ac0fa9819013729c0e817a97c90f579108fa032a90bba0ca51cb",
+          "bytes": 25769,
+          "verified_at": "2026-10-20T10:58:09.947309+00:00"
+        },
+        {
+          "path": "src/appworld/task.py",
+          "url": "https://github.com/StonyBrookNLP/appworld/blob/main/src/appworld/task.py",
+          "raw_url": "https://raw.githubusercontent.com/StonyBrookNLP/appworld/main/src/appworld/task.py",
+          "sha256": "f999c02316639eae33316ad5bac52c58c217a80ee553f38b3084eb5ea18c5d7e",
+          "bytes": 13644,
+          "verified_at": "2026-10-20T10:58:10.421232+00:00"
+        }
+      ]
+    },
+    {
+      "id": "agentgym",
+      "title": "AgentGym",
+      "repo": "WooooDyy/AgentGym",
+      "url": "https://github.com/WooooDyy/AgentGym",
+      "license_scope": "MIT repository; upstream datasets/environments have separate terms",
+      "role": "trajectory interface and behavioral cloning",
+      "evidence_level": "README and selected actual source files read; not runtime reproduced",
+      "mechanism": "ConversationMessage(from,loss,value); StepOutput; BCTrainer assistant token labels",
+      "toolshift_use": "Use public trajectory schema ideas and explicit masking; adapt actual tokenizer template",
+      "limitation": "Current BCTrainer source has hard-coded [INST]; no existing training result is transferred to ToolShift.",
+      "sources": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/WooooDyy/AgentGym/blob/main/README.md",
+          "raw_url": "https://raw.githubusercontent.com/WooooDyy/AgentGym/main/README.md",
+          "sha256": "086fb4cebe0f7be202f44bf3d406dcc3202a1c08d2bc074e99413cf7368a24d0",
+          "bytes": 13187,
+          "verified_at": "2026-10-20T10:58:10.972814+00:00"
+        },
+        {
+          "path": "agentenv/agentenv/controller/env.py",
+          "url": "https://github.com/WooooDyy/AgentGym/blob/main/agentenv/agentenv/controller/env.py",
+          "raw_url": "https://raw.githubusercontent.com/WooooDyy/AgentGym/main/agentenv/agentenv/controller/env.py",
+          "sha256": "704ea319fbe1e3caaed27781eebe772a115f628b8bc97179e0df21775dac42fd",
+          "bytes": 896,
+          "verified_at": "2026-10-20T10:58:11.395631+00:00"
+        },
+        {
+          "path": "agentenv/agentenv/controller/types.py",
+          "url": "https://github.com/WooooDyy/AgentGym/blob/main/agentenv/agentenv/controller/types.py",
+          "raw_url": "https://raw.githubusercontent.com/WooooDyy/AgentGym/main/agentenv/agentenv/controller/types.py",
+          "sha256": "d2eb055f0278955c33c315227c4671ce70c63e12f3d14298964026b349508f01",
+          "bytes": 1504,
+          "verified_at": "2026-10-20T10:58:11.490079+00:00"
+        },
+        {
+          "path": "agentenv/agentenv/trainer/bc_trainer.py",
+          "url": "https://github.com/WooooDyy/AgentGym/blob/main/agentenv/agentenv/trainer/bc_trainer.py",
+          "raw_url": "https://raw.githubusercontent.com/WooooDyy/AgentGym/main/agentenv/agentenv/trainer/bc_trainer.py",
+          "sha256": "c84553d8b55214f2283cd07f9836ffc720d7cef9ba2cd2bcd6e8d6983500b20e",
+          "bytes": 25978,
+          "verified_at": "2026-10-20T10:58:12.722058+00:00"
+        }
+      ]
+    },
+    {
+      "id": "agentlab",
+      "title": "AgentLab",
+      "repo": "ServiceNow/AgentLab",
+      "url": "https://github.com/ServiceNow/AgentLab",
+      "license_scope": "Apache-2.0",
+      "role": "experiment reproducibility",
+      "evidence_level": "README and selected actual source files read; not runtime reproduced",
+      "mechanism": "Git/version metadata and study compatibility checks",
+      "toolshift_use": "Bind results to code/data/model versions; distinguish engine exceptions and task failures",
+      "limitation": "AgentLab is a framework over external benchmarks, not one dataset or evidence that all benchmarks were reproduced.",
+      "sources": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/ServiceNow/AgentLab/blob/main/README.md",
+          "raw_url": "https://raw.githubusercontent.com/ServiceNow/AgentLab/main/README.md",
+          "sha256": "ca312434db1db852f96fb49bbc0a61f6a93cffe6c0dd3aa2b7ac814681ccc19e",
+          "bytes": 17447,
+          "verified_at": "2026-10-20T10:58:12.923161+00:00"
+        },
+        {
+          "path": "src/agentlab/experiments/reproducibility_util.py",
+          "url": "https://github.com/ServiceNow/AgentLab/blob/main/src/agentlab/experiments/reproducibility_util.py",
+          "raw_url": "https://raw.githubusercontent.com/ServiceNow/AgentLab/main/src/agentlab/experiments/reproducibility_util.py",
+          "sha256": "54254f1615c59eebcc3ecb9a908298bd8feee1e144e94c521941f58e97a914cd",
+          "bytes": 13130,
+          "verified_at": "2026-10-20T10:58:13.090381+00:00"
+        },
+        {
+          "path": "src/agentlab/experiments/study.py",
+          "url": "https://github.com/ServiceNow/AgentLab/blob/main/src/agentlab/experiments/study.py",
+          "raw_url": "https://raw.githubusercontent.com/ServiceNow/AgentLab/main/src/agentlab/experiments/study.py",
+          "sha256": "9fc48e904c84951afeeaae7a4f365b40a665dc6a6bd851d8761c9b89e727b920",
+          "bytes": 32276,
+          "verified_at": "2026-10-20T10:58:13.049803+00:00"
+        }
+      ]
+    },
+    {
+      "id": "tooltalk",
+      "title": "ToolTalk",
+      "repo": "microsoft/ToolTalk",
+      "url": "https://github.com/microsoft/ToolTalk",
+      "license_scope": "MIT",
+      "role": "conversational tool evaluation",
+      "evidence_level": "README and selected actual source files read; not runtime reproduced",
+      "mechanism": "JSON conversation with reference APIs; recall and unmatched successful side-effect actions",
+      "toolshift_use": "Count harmful side effects and inspect each write; evaluate our independent state semantics",
+      "limitation": "Reference-call matching and final-state equivalence are different metrics; do not call our score ToolTalk success.",
+      "sources": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/microsoft/ToolTalk/blob/main/README.md",
+          "raw_url": "https://raw.githubusercontent.com/microsoft/ToolTalk/main/README.md",
+          "sha256": "d43ee5965152cfa21e9addf9d734b61ad9a36b679c622d5b2efce942c037d3c7",
+          "bytes": 4818,
+          "verified_at": "2026-10-20T10:58:12.661237+00:00"
+        },
+        {
+          "path": "data/databases/Calendar.json",
+          "url": "https://github.com/microsoft/ToolTalk/blob/main/data/databases/Calendar.json",
+          "raw_url": "https://raw.githubusercontent.com/microsoft/ToolTalk/main/data/databases/Calendar.json",
+          "sha256": "0ad464fd1ab9300d224226c5f1c1b58060f1587b2f47f4d2f1479f850acb812b",
+          "bytes": 14536,
+          "verified_at": "2026-10-20T10:58:14.996690+00:00"
+        },
+        {
+          "path": "data/easy/ModifyEvent-easy.json",
+          "url": "https://github.com/microsoft/ToolTalk/blob/main/data/easy/ModifyEvent-easy.json",
+          "raw_url": "https://raw.githubusercontent.com/microsoft/ToolTalk/main/data/easy/ModifyEvent-easy.json",
+          "sha256": "0a449c95b4676d41b4bd14cb0567161a962135e4b2bd10d8467da831d24a2396",
+          "bytes": 1929,
+          "verified_at": "2026-10-20T10:58:14.668771+00:00"
+        },
+        {
+          "path": "data/tooltalk/Calendar-Messages-Reminder-ModifyEvent-0.json",
+          "url": "https://github.com/microsoft/ToolTalk/blob/main/data/tooltalk/Calendar-Messages-Reminder-ModifyEvent-0.json",
+          "raw_url": "https://raw.githubusercontent.com/microsoft/ToolTalk/main/data/tooltalk/Calendar-Messages-Reminder-ModifyEvent-0.json",
+          "sha256": "14ab311d61af151fa86025c26914384801199c6391d2d46287779acae895455d",
+          "bytes": 6916,
+          "verified_at": "2026-10-20T10:58:14.702022+00:00"
+        },
+        {
+          "path": "src/tooltalk/evaluation/tool_executor.py",
+          "url": "https://github.com/microsoft/ToolTalk/blob/main/src/tooltalk/evaluation/tool_executor.py",
+          "raw_url": "https://raw.githubusercontent.com/microsoft/ToolTalk/main/src/tooltalk/evaluation/tool_executor.py",
+          "sha256": "879ab775c68886510addafa807b5d48979d0ea3d4d8545cde2876c6cbdaa5cc8",
+          "bytes": 14023,
+          "verified_at": "2026-10-20T10:58:13.732726+00:00"
+        }
+      ]
+    },
+    {
+      "id": "agentcompat",
+      "title": "AgentCompat",
+      "repo": "armanzareian/agentcompat",
+      "url": "https://github.com/armanzareian/agentcompat",
+      "license_scope": "Apache-2.0",
+      "role": "static schema compatibility baseline",
+      "evidence_level": "README and selected actual source files read; not runtime reproduced",
+      "mechanism": "Replay historical arguments against baseline/candidate schemas; weighted sampling",
+      "toolshift_use": "Schema-diff baseline and explicit limits under semantic-only drift",
+      "limitation": "Read source contains no active-query training. No global novelty claim follows from absence in one repository.",
+      "sources": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/armanzareian/agentcompat/blob/main/README.md",
+          "raw_url": "https://raw.githubusercontent.com/armanzareian/agentcompat/main/README.md",
+          "sha256": "abf50b0c7b6482c911cfd1de00311e601eb089ce9c82542a65478e27a6854457",
+          "bytes": 11105,
+          "verified_at": "2026-10-20T10:58:14.668996+00:00"
+        },
+        {
+          "path": "src/agentcompat/analyzer.py",
+          "url": "https://github.com/armanzareian/agentcompat/blob/main/src/agentcompat/analyzer.py",
+          "raw_url": "https://raw.githubusercontent.com/armanzareian/agentcompat/main/src/agentcompat/analyzer.py",
+          "sha256": "531cdb883dbef123ac6876faee9be2c6381504fc90053e1e9196ba5a52fc88b7",
+          "bytes": 13982,
+          "verified_at": "2026-10-20T10:58:15.205932+00:00"
+        },
+        {
+          "path": "src/agentcompat/models.py",
+          "url": "https://github.com/armanzareian/agentcompat/blob/main/src/agentcompat/models.py",
+          "raw_url": "https://raw.githubusercontent.com/armanzareian/agentcompat/main/src/agentcompat/models.py",
+          "sha256": "b7f39aac379fe7b07bf7a26684f088d8ddae3393376fcc862199192ad314bac1",
+          "bytes": 2537,
+          "verified_at": "2026-10-20T10:58:15.342075+00:00"
+        }
+      ]
+    },
+    {
+      "id": "agent-tool-drift",
+      "title": "agent-tool-drift",
+      "repo": "fykong/agent-tool-drift",
+      "url": "https://github.com/fykong/agent-tool-drift",
+      "license_scope": "MIT",
+      "role": "static contract drift baseline",
+      "evidence_level": "README and selected actual source files read; not runtime reproduced",
+      "mechanism": "ToolContract, Snapshot, compare_snapshots, MCP tools/list and heuristic advice",
+      "toolshift_use": "Structured old/new contract differencing baseline",
+      "limitation": "A tools/list call is not a learned sequential query policy; semantic updates require available contract evidence.",
+      "sources": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/fykong/agent-tool-drift/blob/main/README.md",
+          "raw_url": "https://raw.githubusercontent.com/fykong/agent-tool-drift/main/README.md",
+          "sha256": "1c42de0b4f67823b4743372f55c11f2f7ada3d45d6ffb334db84ba9fdeef555c",
+          "bytes": 17518,
+          "verified_at": "2026-10-20T10:58:17.613304+00:00"
+        },
+        {
+          "path": "src/agent_tool_drift/diff.py",
+          "url": "https://github.com/fykong/agent-tool-drift/blob/main/src/agent_tool_drift/diff.py",
+          "raw_url": "https://raw.githubusercontent.com/fykong/agent-tool-drift/main/src/agent_tool_drift/diff.py",
+          "sha256": "70aca5dd63d81c0dd42afe30c063ef749fafd14f0985b5946d1acd04a8e74f3c",
+          "bytes": 45626,
+          "verified_at": "2026-10-20T10:58:16.751469+00:00"
+        },
+        {
+          "path": "src/agent_tool_drift/mcp_client.py",
+          "url": "https://github.com/fykong/agent-tool-drift/blob/main/src/agent_tool_drift/mcp_client.py",
+          "raw_url": "https://raw.githubusercontent.com/fykong/agent-tool-drift/main/src/agent_tool_drift/mcp_client.py",
+          "sha256": "245aeca4c1ea7afef8ae1478c1849289f0ea24ea85ccc6faf6987b10cad752fb",
+          "bytes": 9044,
+          "verified_at": "2026-10-20T10:58:16.594495+00:00"
+        },
+        {
+          "path": "src/agent_tool_drift/models.py",
+          "url": "https://github.com/fykong/agent-tool-drift/blob/main/src/agent_tool_drift/models.py",
+          "raw_url": "https://raw.githubusercontent.com/fykong/agent-tool-drift/main/src/agent_tool_drift/models.py",
+          "sha256": "638c6ec56b7e23a0bf47ee71f7bef1d0af85d46f160364cae60bbd87ace7a329",
+          "bytes": 4512,
+          "verified_at": "2026-10-20T10:58:16.356001+00:00"
+        }
+      ]
+    },
+    {
+      "id": "skill-drift",
+      "title": "Skill Drift Is Contract Violation: Proactive Maintenance for LLM Agent Skill Libraries",
+      "url": "https://arxiv.org/html/2605.10990v1",
+      "evidence_level": "primary full text read in prior phase; Sections 3-5 and Appendix O revisited",
+      "covered": [
+        "paired drift/no-drift benchmark",
+        "role-bearing contract validation",
+        "localized prompt-based repair"
+      ],
+      "boundary": "Do not claim drift detection, version pairing, or local repair as new."
+    },
+    {
+      "id": "tooldriftbench",
+      "title": "ToolDriftBench: Detecting and Recovering from MCP Tool Index Staleness in Agentic Systems",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11677805/",
+      "doi": "10.1109/SmartIoT70864.2026.00056",
+      "evidence_level": "publisher abstract only; full text inaccessible behind JavaScript verification",
+      "covered": [
+        "manifest drift monitoring",
+        "incremental affected FAISS entry re-embedding"
+      ],
+      "boundary": "Cannot exclude active-query training in unobserved full text; no exhaustive originality claim."
+    },
+    {
+      "id": "peft-quantization",
+      "title": "Hugging Face PEFT quantization documentation",
+      "url": "https://huggingface.co/docs/peft/developer_guides/quantization",
+      "evidence_level": "official documentation read 2026-10-20",
+      "toolshift_use": "NF4/4-bit loading, prepare_model_for_kbit_training, LoRA adapter setup; actual supported hardware and dependencies must pass local preflight"
+    },
+    {
+      "id": "transformers-chat-template",
+      "title": "Hugging Face Transformers chat templates",
+      "url": "https://huggingface.co/docs/transformers/chat_templating",
+      "evidence_level": "official documentation read 2026-10-20",
+      "toolshift_use": "Use model tokenizer template instead of copying legacy Llama2 formatting; verify supervised token masks"
+    }
+  ]
+}

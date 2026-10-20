@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toolshift"
+version = "0.1.0"
+description = "Action-sufficient evidence acquisition under tool semantic drift"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "ToolShift contributors"}]
+dependencies = []
+
+[project.optional-dependencies]
+train = ["torch>=2.5,<3", "transformers>=4.49,<5", "peft>=0.14,<1", "accelerate>=1,<2"]
+cuda = ["bitsandbytes>=0.45,<1"]
+
+[project.scripts]
+toolshift = "toolshift.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

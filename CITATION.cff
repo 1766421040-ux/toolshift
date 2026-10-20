@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If this software supports your work, please cite this repository and the upstream methods you use."
+title: "ToolShift: Action-Sufficient Diagnosis under Tool Semantic Drift"
+type: software
+authors:
+  - name: "ToolShift contributors"
+version: 0.1.0
+date-released: 2026-10-20
+url: "https://github.com/1766421040-ux/toolshift"
+license: MIT
+

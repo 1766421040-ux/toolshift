@@ -1,0 +1,27 @@
+{
+  "ablation": "single first valid teacher label, same observations, seed17 and epochs12",
+  "baselines": [
+    "oracle",
+    "static",
+    "identify",
+    "refresh",
+    "legacy",
+    "schema",
+    "random"
+  ],
+  "dataset_sha256": {
+    "dev": "41b3b20bf5f47de57e78115b4e48e33a2c88e9a002b32366d167bf6f1901af75",
+    "episodes": "c8ea975ddcce4186634ee5f70fb3fe97d5379712fe1fd6d155425cdad45c8b31",
+    "test": "afd74ed5b12806e0b4536600ea1cc970360e15e7864cceaf350d2796998caea8",
+    "train": "f43f99ef5d6f42962bdb00a88c89263087eda571590032450f0d7a2729924f2e"
+  },
+  "epochs": 12,
+  "evaluation": "all test episodes, no test-based selection",
+  "learning_rate": 0.25,
+  "primary": "robust_success_rate; realized success is also reported",
+  "seeds": [
+    17,
+    29,
+    43
+  ]
+}

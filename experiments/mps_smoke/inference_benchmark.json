@@ -1,0 +1,69 @@
+{
+  "device": "mps",
+  "limitations": [
+    "Three observations are a speed smoke check, not a latency distribution.",
+    "After-call memory counters are not peak memory.",
+    "This benchmark does not measure task success or use correctness labels."
+  ],
+  "model": "SmolLM2-135M-Instruct plus 4-step smoke adapter",
+  "protocol": "One warmup, then three public observations per batch size, fixed model.",
+  "results": [
+    {
+      "allocated_bytes_after": 548812288,
+      "candidates_per_observation": [
+        14,
+        10,
+        14
+      ],
+      "driver_bytes_after": 1146372096,
+      "max_batch_size": 1,
+      "max_score_absolute_difference_from_full_logits": 1.9073486328125e-06,
+      "median_seconds": 1.6658378340071067,
+      "observation_count": 3,
+      "same_selected_decision_as_full_logits": true,
+      "seconds_per_observation": [
+        1.6658378340071067,
+        1.1793510409770533,
+        1.6777836250257678
+      ]
+    },
+    {
+      "allocated_bytes_after": 548812288,
+      "candidates_per_observation": [
+        14,
+        10,
+        14
+      ],
+      "driver_bytes_after": 1166196736,
+      "max_batch_size": 2,
+      "max_score_absolute_difference_from_full_logits": 3.814697265625e-06,
+      "median_seconds": 1.796499166986905,
+      "observation_count": 3,
+      "same_selected_decision_as_full_logits": true,
+      "seconds_per_observation": [
+        1.796499166986905,
+        1.2362924159970134,
+        1.8155292079900391
+      ]
+    },
+    {
+      "allocated_bytes_after": 548812288,
+      "candidates_per_observation": [
+        14,
+        10,
+        14
+      ],
+      "driver_bytes_after": 2260877312,
+      "max_batch_size": 4,
+      "max_score_absolute_difference_from_full_logits": 3.814697265625e-06,
+      "median_seconds": 1.782699000032153,
+      "observation_count": 3,
+      "same_selected_decision_as_full_logits": true,
+      "seconds_per_observation": [
+        1.8108166250167415,
+        1.1139281670330092,
+        1.782699000032153
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "protocol_version": "toolshift.hf-evaluation.v2",
+  "status_at_registration": "before_main_training_and_model_evaluation",
+  "selection_rule": "For each domain x suite choose test group minimizing SHA256(JSON([17,domain,suite,group_id], compact separators)); retain all actual worlds.",
+  "training_data_sha256": "f43f99ef5d6f42962bdb00a88c89263087eda571590032450f0d7a2729924f2e",
+  "episodes_data_sha256": "c8ea975ddcce4186634ee5f70fb3fe97d5379712fe1fd6d155425cdad45c8b31",
+  "episode_count": 51,
+  "independent_groups": 13,
+  "episode_ids": [
+    "3fd55900393207a87ae53cc2",
+    "43d8a4b584d35e8ea291236e",
+    "0e364e1e56aa4addac777b2a",
+    "b0d6c0894ca37f73209ff37e",
+    "01b6b503020d286f48ad3c3f",
+    "0f939e8e020fd3c5f651d60f",
+    "414b733ed057421686ccce28",
+    "585844371efafe07b18a7c03",
+    "5e5c16ed214a9a28d8c48070",
+    "5f1d9441e933a3063dcad9bf",
+    "8745ca39b14bbb3c7e25a460",
+    "b1109d83cc963c4b5520ac64",
+    "78a58452231fae00328bf5e9",
+    "20f70df5c08ffce5c0621c5e",
+    "23d0338207d79b0691011b8b",
+    "0ba9c21f280801f0adad5537",
+    "82aadf0cb3f196a8fa961162",
+    "64f6840f67ba6933eb4541e1",
+    "e6aa150616a3f314bdb0a725",
+    "1f4a58d11988cdf38552be5b",
+    "a6fad8a67aa456297681dc79",
+    "151375bb41561b378d43dbc5",
+    "2c2ae4e41add4a38aeadeadd",
+    "6f32d4923867e425e3a8c6d1",
+    "8fb363120e40c732e4598a46",
+    "929fb638ef8ce9a98ce08049",
+    "9d3d8150f6f831d9f16d61fc",
+    "d1645f67811d29d7a609f8ca",
+    "d97a8c411a82e818a1d5e2b7",
+    "12f5400ccf36ceecf7fd8054",
+    "1fa355120e8909f790b25e66",
+    "4563d383ba94f56a4f3eeb08",
+    "34b3fcdc645bdf954930de98",
+    "504e6ec9c8985cfff1b16763",
+    "4dc1a98d50ffee78b42a9263",
+    "bb954f046adca4c2c488f8b6",
+    "01594673ce18265a65a7e393",
+    "65fd589ebeac33665633d8f3",
+    "125f63a9dc2382ca5c90e11f",
+    "4a100da9de574426bac60ad2",
+    "4c96fc8d52006801302739b6",
+    "8f8a795add072219aac16c6e",
+    "901c55155695a8d01b1d8665",
+    "a5ce1daa1349c86681ef6d47",
+    "e6ec92e7eae5e00255b63b31",
+    "f4de1c5e1aca7096731513ce",
+    "3777a1d25af3065a3889cc59",
+    "8dafe74feb76cf09e51c9524",
+    "9d5c3293930e1c6d48dcca28",
+    "2ce39a32888209732b03872d",
+    "d7159e1a49a723e26fc761a1"
+  ],
+  "candidate_batch_size": 1,
+  "max_rollout_steps": 10,
+  "compare": [
+    "base_135m",
+    "lora_135m_200step"
+  ],
+  "seed": 17,
+  "limitations": [
+    "One 135M model, one training seed, small deterministic subset; no broad generalization claim.",
+    "Versions sharing group_id are correlated; report grouped descriptive intervals."
+  ],
+  "revision_reason": "Increase independent group count; no model evaluation result observed.",
+  "strata": [
+    {
+      "domain": "calendar",
+      "suite": "append_replace",
+      "group_id": "ab13fde2194eaa304aa33cd1",
+      "episodes": 2
+    },
+    {
+      "domain": "calendar",
+      "suite": "default_scope",
+      "group_id": "06af5fab20b1de8bcc2e0ed3",
+      "episodes": 2
+    },
+    {
+      "domain": "calendar",
+      "suite": "mixed",
+      "group_id": "40307403efd9cdb5bb8178fd",
+      "episodes": 8
+    },
+    {
+      "domain": "calendar",
+      "suite": "no_drift",
+      "group_id": "9d8634c3e32fddb3310750dc",
+      "episodes": 1
+    },
+    {
+      "domain": "calendar",
+      "suite": "unidentifiable",
+      "group_id": "76dee6571de2baa556a663dd",
+      "episodes": 2
+    },
+    {
+      "domain": "calendar",
+      "suite": "units",
+      "group_id": "2cb40cac21fb7c0477ad960c",
+      "episodes": 2
+    },
+    {
+      "domain": "catalog",
+      "suite": "append_replace",
+      "group_id": "4d95dd42d3ddd1024665e7c4",
+      "episodes": 2
+    },
+    {
+      "domain": "catalog",
+      "suite": "default_scope",
+      "group_id": "3baecc2f38eab1013f5d3ed1",
+      "episodes": 2
+    },
+    {
+      "domain": "catalog",
+      "suite": "mixed",
+      "group_id": "3baecc2f38eab1013f5d3ed1",
+      "episodes": 8
+    },
+    {
+      "domain": "catalog",
+      "suite": "no_drift",
+      "group_id": "7b8f05846c7e4d27ce9b5f75",
+      "episodes": 1
+    },
+    {
+      "domain": "catalog",
+      "suite": "unidentifiable",
+      "group_id": "93ea10ffd3c953546f8f7ae8",
+      "episodes": 2
+    },
+    {
+      "domain": "catalog",
+      "suite": "units",
+      "group_id": "3baecc2f38eab1013f5d3ed1",
+      "episodes": 2
+    },
+    {
+      "domain": "travel",
+      "suite": "append_replace",
+      "group_id": "7d8d2c3da696c0fd1de96ff2",
+      "episodes": 2
+    },
+    {
+      "domain": "travel",
+      "suite": "default_scope",
+      "group_id": "e1c72f47f352b3598ea0616c",
+      "episodes": 2
+    },
+    {
+      "domain": "travel",
+      "suite": "mixed",
+      "group_id": "fb3bacc6c5ff49d2c536995d",
+      "episodes": 8
+    },
+    {
+      "domain": "travel",
+      "suite": "no_drift",
+      "group_id": "fb3bacc6c5ff49d2c536995d",
+      "episodes": 1
+    },
+    {
+      "domain": "travel",
+      "suite": "unidentifiable",
+      "group_id": "7d8d2c3da696c0fd1de96ff2",
+      "episodes": 2
+    },
+    {
+      "domain": "travel",
+      "suite": "units",
+      "group_id": "e1c72f47f352b3598ea0616c",
+      "episodes": 2
+    }
+  ]
+}

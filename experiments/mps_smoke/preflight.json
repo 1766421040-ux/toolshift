@@ -1,0 +1,24 @@
+{
+  "assistant_prefix_check_passed": true,
+  "device": "mps",
+  "full_tokens_max": 1098,
+  "full_tokens_median": 1087.0,
+  "full_tokens_min": 966,
+  "max_acceptable_alternatives": 4,
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "record_ids": [
+    "46cdf38b7074ac813c83c2a2014492c69904f5443d5fac3d4b980ded8fc1cfc4",
+    "1ef650c30ad01a6715aac5533a74c7cfb6e8ae7a81b019856840f1030566e757",
+    "63804edf7687fb14dbf4a9c892cdfa45b53b0e8448818ed47b73872837b08ad2",
+    "e97f16915a10353ceaee0a2b2e017efb7e1feb74fcce05284a0d4c22a1b659dd",
+    "7ad027db063f51d61239676355fa6768cdc7bd6bda4ca18c8e6d044bf26a851f",
+    "91d1effd6bf24f8dc0e941e911aec1746ff164dbeabe0fd85dde07842e43bdd0",
+    "f5e97851097a8fbc0c34f446c9407135e065b5e609e9f783ab5e00a88a68eeef",
+    "4b58b3b6afc32af65639b817473ca1613c5d34cd4f62ca09e93d80c5a13a5b6c"
+  ],
+  "selected_training_groups": 2,
+  "selected_training_records": 8,
+  "supervised_tokens_max": 53,
+  "supervised_tokens_min": 18,
+  "truncated_records": 0
+}

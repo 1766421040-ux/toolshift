@@ -1,0 +1,105 @@
+{
+  "protocol": "toolshift.diagnostic.v1",
+  "seed": 20261020,
+  "random_cases": 64,
+  "fixed_cases": 3,
+  "total_cases": 67,
+  "distinct_labeled_support_partition_structures": 65,
+  "structure_count_caveat": "Not canonicalized for graph isomorphism; do not call independent graph families.",
+  "semantic_world_instances": 374,
+  "policy_episodes": 1870,
+  "methods": {
+    "exact_action": {
+      "cases": 67,
+      "episodes": 374,
+      "robust_success_rate": 1.0,
+      "invariant_violations": 0,
+      "mean_case_worst_cost": 3.701492537313433,
+      "mean_episode_query_cost": 3.735294117647059,
+      "total_compile_seconds": 0.03369458712404594,
+      "max_tree_nodes": 15
+    },
+    "exact_version": {
+      "cases": 67,
+      "episodes": 374,
+      "robust_success_rate": 1.0,
+      "invariant_violations": 0,
+      "mean_case_worst_cost": 4.134328358208955,
+      "mean_episode_query_cost": 4.160427807486631,
+      "total_compile_seconds": 0.035914873937144876,
+      "max_tree_nodes": 15
+    },
+    "greedy_action": {
+      "cases": 67,
+      "episodes": 374,
+      "robust_success_rate": 1.0,
+      "invariant_violations": 0,
+      "mean_case_worst_cost": 3.955223880597015,
+      "mean_episode_query_cost": 3.751336898395722,
+      "total_compile_seconds": 0.013129996077623218,
+      "max_tree_nodes": 13
+    },
+    "greedy_version": {
+      "cases": 67,
+      "episodes": 374,
+      "robust_success_rate": 1.0,
+      "invariant_violations": 0,
+      "mean_case_worst_cost": 4.641791044776119,
+      "mean_episode_query_cost": 4.072192513368984,
+      "total_compile_seconds": 0.01310653769178316,
+      "max_tree_nodes": 15
+    },
+    "full_refresh": {
+      "cases": 67,
+      "episodes": 374,
+      "robust_success_rate": 1.0,
+      "invariant_violations": 0,
+      "mean_case_worst_cost": 5.880597014925373,
+      "mean_episode_query_cost": 6.090909090909091,
+      "total_compile_seconds": 0.007632496068254113,
+      "max_tree_nodes": 9
+    }
+  },
+  "comparisons": {
+    "exact_action_vs_exact_version": {
+      "meaning": "Counts compare exact_action worst cost to the named method.",
+      "lower": 17,
+      "equal": 50,
+      "higher": 0,
+      "mean_other_minus_exact": 0.43283582089552236
+    },
+    "exact_action_vs_greedy_action": {
+      "meaning": "Counts compare exact_action worst cost to the named method.",
+      "lower": 15,
+      "equal": 52,
+      "higher": 0,
+      "mean_other_minus_exact": 0.2537313432835821
+    },
+    "exact_action_vs_greedy_version": {
+      "meaning": "Counts compare exact_action worst cost to the named method.",
+      "lower": 32,
+      "equal": 35,
+      "higher": 0,
+      "mean_other_minus_exact": 0.9402985074626866
+    },
+    "exact_action_vs_full_refresh": {
+      "meaning": "Counts compare exact_action worst cost to the named method.",
+      "lower": 37,
+      "equal": 30,
+      "higher": 0,
+      "mean_other_minus_exact": 2.1791044776119404
+    }
+  },
+  "sql_audit": {
+    "passed": true,
+    "plan_world_pairs": 1396,
+    "write_orders_checked": 2792,
+    "wrong_plan_pairs_checked": 1022
+  },
+  "claims": {
+    "real_sqlite_execution": true,
+    "learned_policy": false,
+    "new_dynamic_programming_theory": false,
+    "external_benchmark_reproduction": false
+  }
+}

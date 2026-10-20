@@ -1,0 +1,7 @@
+{
+  "dimensions": 32768,
+  "learning_rate": 0.25,
+  "epochs": 12,
+  "seed": 17,
+  "epsilon": 1e-8
+}

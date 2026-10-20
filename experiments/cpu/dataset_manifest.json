@@ -1,0 +1,39 @@
+{
+  "assumptions": [
+    "Every policy receives the same declared finite semantic support.",
+    "Three domains share two underlying operator families.",
+    "Prefix holdout is superficial wording variation, not new language templates.",
+    "Teacher uses act-first tie-breaking among minimum-worst-cost policies.",
+    "Test fixtures and labels are evaluator-owned; they are never training inputs."
+  ],
+  "decision_records": 3006,
+  "episode_splits": {
+    "dev": 225,
+    "test": 1258,
+    "train": 729
+  },
+  "episodes": 2212,
+  "evaluation_categories": {
+    "composition": 112,
+    "dev": 225,
+    "domain": 1020,
+    "instance_and_prefix": 126,
+    "train": 729
+  },
+  "heldout_domain": "calendar",
+  "query_budget": 4,
+  "record_splits": {
+    "dev": 325,
+    "test": 1628,
+    "train": 1053
+  },
+  "schema_version": "toolshift.dataset.v1",
+  "seeds_requested_per_domain": 60,
+  "sha256": {
+    "dev": "41b3b20bf5f47de57e78115b4e48e33a2c88e9a002b32366d167bf6f1901af75",
+    "episodes": "c8ea975ddcce4186634ee5f70fb3fe97d5379712fe1fd6d155425cdad45c8b31",
+    "test": "afd74ed5b12806e0b4536600ea1cc970360e15e7864cceaf350d2796998caea8",
+    "train": "f43f99ef5d6f42962bdb00a88c89263087eda571590032450f0d7a2729924f2e"
+  },
+  "unique_semantic_groups": 180
+}

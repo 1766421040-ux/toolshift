@@ -1,0 +1,21 @@
+{
+  "model_name_or_path": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": null,
+  "local_files_only": true,
+  "backend": "cuda_qlora",
+  "max_length": 2048,
+  "max_alternatives": 8,
+  "micro_batch_size": 1,
+  "gradient_accumulation_steps": 16,
+  "learning_rate": 0.0002,
+  "num_train_epochs": 3,
+  "max_steps": -1,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": "all-linear",
+  "seed": 17,
+  "save_steps": 50,
+  "logging_steps": 10,
+  "precision": "bf16"
+}

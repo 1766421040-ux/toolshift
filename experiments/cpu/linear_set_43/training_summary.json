@@ -1,0 +1,85 @@
+{
+  "config": {
+    "dimensions": 32768,
+    "epochs": 12,
+    "epsilon": 1e-08,
+    "learning_rate": 0.25,
+    "seed": 43
+  },
+  "dataset_sha256": "d93eef9fc04816bad9d8213b00dc67c575dda0e71fe785c944afb2e5f6cc27a5",
+  "epochs": 12,
+  "evaluation": "Training accuracy only; held-out rollout evaluation is separate.",
+  "history": [
+    {
+      "epoch": 1,
+      "train_online_set_accuracy": 0.6600189933523267,
+      "train_set_loss": 0.8804157204270445
+    },
+    {
+      "epoch": 2,
+      "train_online_set_accuracy": 0.8452041785375118,
+      "train_set_loss": 0.4667463910476977
+    },
+    {
+      "epoch": 3,
+      "train_online_set_accuracy": 0.8746438746438746,
+      "train_set_loss": 0.39017954376757874
+    },
+    {
+      "epoch": 4,
+      "train_online_set_accuracy": 0.8898385565052231,
+      "train_set_loss": 0.3506514692428243
+    },
+    {
+      "epoch": 5,
+      "train_online_set_accuracy": 0.9031339031339032,
+      "train_set_loss": 0.32367053603922297
+    },
+    {
+      "epoch": 6,
+      "train_online_set_accuracy": 0.9088319088319088,
+      "train_set_loss": 0.30355130802679026
+    },
+    {
+      "epoch": 7,
+      "train_online_set_accuracy": 0.9050332383665717,
+      "train_set_loss": 0.28768396832961335
+    },
+    {
+      "epoch": 8,
+      "train_online_set_accuracy": 0.9164292497625831,
+      "train_set_loss": 0.2751012709293966
+    },
+    {
+      "epoch": 9,
+      "train_online_set_accuracy": 0.9221272554605888,
+      "train_set_loss": 0.2655825077267213
+    },
+    {
+      "epoch": 10,
+      "train_online_set_accuracy": 0.9221272554605888,
+      "train_set_loss": 0.25611934285812604
+    },
+    {
+      "epoch": 11,
+      "train_online_set_accuracy": 0.9230769230769231,
+      "train_set_loss": 0.2480862588140882
+    },
+    {
+      "epoch": 12,
+      "train_online_set_accuracy": 0.9211775878442545,
+      "train_set_loss": 0.24028789873550777
+    }
+  ],
+  "is_language_model": false,
+  "model_path": "runs/cpu/linear_set_43/model.json",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "resumed_from_epoch": 0,
+  "status": "trained_cpu_linear",
+  "train_groups": 81,
+  "train_rows": 1053,
+  "train_set_accuracy": 0.9240265906932573,
+  "training_seconds_this_invocation": 16.02993387500001,
+  "updates": 12636
+}

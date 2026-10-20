@@ -1,0 +1,29 @@
+{
+  "protocol": "toolshift.diagnostic.v1",
+  "config": {
+    "seed": 20261020,
+    "random_cases": 64
+  },
+  "environment": {
+    "python": "3.13.9",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O"
+  },
+  "module_sha256": "80bd15dacb753c2f466dae2566f51c2689e185470e8d7df0c887868aca756ef2",
+  "core_source_sha256": {
+    "schema.py": "7113c83382e760f914d5f7fd8afe4123ab742571a15b02d8a212044317cf950a",
+    "domains.py": "44291f69d47bf374fb65fb199bf6eb78d9fc0825026a22c4a0a20c5fe92cb288",
+    "sandbox.py": "6050ba4b9666a41bce07f466389322b682180d4370c49a9dd3e318cdb78ce6c1"
+  },
+  "artifact_sha256": {
+    "public_cases.jsonl": "e0c6ebc46ee20b76e9b88c78a03e1934a56b4022e101621fede2090397db2d7e",
+    "compiled_trees.jsonl": "25bb5255be21c56783a2117c62a03cbc43f7163e3ebb8bf19899bbb40d5128cf",
+    "episodes.jsonl": "4b7b6c532e0429a198cd454fe838f6c618c89181eed1d267402184babdb3a7f3",
+    "case_results.jsonl": "8e573064b599f59791e9708ac5e167f27f13e16be37ccef361acde8e430c71f3",
+    "sql_audits.jsonl": "4e25dce1288bed67bb70d6f25aab5b6815e52207f991afeea92bfc9f5c22d49f",
+    "summary.json": "fb86d775ede1da1b87b0e7b4e01e2aebf0f4b2f5dea54ef60cf90da77def44c3"
+  },
+  "sampling": "All generated cases retained; all support rows executed for all methods.",
+  "cost_objective": "minimax query cost; separate uniform-world means are descriptive only",
+  "information": "Same complete public finite model to every compiler; actual row only evaluator",
+  "locked_protocol_sha256": "1fa6c9dacd915a4fcd32f642a98b5cd52bb2ae7c0d943d0fbd3737df47985f77"
+}

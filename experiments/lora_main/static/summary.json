@@ -1,0 +1,34 @@
+{
+  "episode_metrics_sha256": "879e87d572b4cbd22b2bd5b958c1769e241264d829ed0c5154e5d29c63338618",
+  "policy": "static",
+  "provenance": {
+    "cpu_protocol_sha256": "6be1b6ac51cfb581619c4a0e726118e46152eb43d1e178300ef12b5d2def4da1",
+    "episodes_data_sha256": "c8ea975ddcce4186634ee5f70fb3fe97d5379712fe1fd6d155425cdad45c8b31",
+    "evaluation_protocol_sha256": "72aaa65efee5c92673baeada42c9db264c4626bc084a43c654da0587edeb960f",
+    "method": "Exact episode-ID projection from the existing full test evaluation; no new rollout.",
+    "source": "experiments/cpu/static/episode_metrics.jsonl",
+    "source_episodes": 1258,
+    "source_sha256": "12dc8f9067df763aae8e70d78aeefb5fec72158bf86ea89f75aa047d6f0291c2"
+  },
+  "summary": {
+    "abstention_rate": 0.11764705882352941,
+    "episodes": 51,
+    "feasible_robust_success_rate": 1.0,
+    "feasible_success_rate": 1.0,
+    "groups": 13,
+    "impossible_case_action_rate": 0.0,
+    "invalid_decision_rate": 0.0,
+    "invariant_violation_rate": 0.0,
+    "mean_audit_seconds": 0.0015071919803930024,
+    "mean_policy_seconds": 0.0003062278823532318,
+    "mean_query_cost": 1.1764705882352942,
+    "mean_query_count": 1.1764705882352942,
+    "mean_successful_query_cost": 1.3333333333333333,
+    "mean_wall_seconds": 0.0027843488431373636,
+    "policy_error_rate": 0.0,
+    "query_cost_per_success": 1.3333333333333333,
+    "robust_success_rate": 0.8823529411764706,
+    "success_rate": 0.8823529411764706,
+    "uncertified_action_episode_rate": 0.0
+  }
+}

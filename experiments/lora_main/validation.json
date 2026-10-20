@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "training_test_command_from_workspace": "PYTHONPATH=outputs/toolshift/src work/toolshift-venv/bin/python -m unittest discover -s outputs/toolshift/tests -p test_training.py -q",
+  "training_tests_run": 15,
+  "training_tests_failed": 0,
+  "optional_hf_integration_executed": true,
+  "training_test_runtime_seconds": 2.647,
+  "artifact_checksum_verification": "all entries matched",
+  "exported_weights_match_checkpoint_step": 200,
+  "export_inference_device": "cpu",
+  "cuda_qlora_executed": false,
+  "mps_resume_bitwise_equivalence_claimed": false
+}

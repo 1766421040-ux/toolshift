@@ -1,0 +1,44 @@
+{
+  "protocol_version": "toolshift.lora-main.v1",
+  "status_at_registration": "planned_before_main_training",
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "model_source": "Already downloaded local snapshot; exact weight hashes recorded at runtime.",
+  "training_data": "data/generated/main/train.jsonl",
+  "selection": "All records with split=train, no development or test labels; deterministic Trainer shuffle.",
+  "training_config": {
+    "backend": "mps_lora",
+    "local_files_only": true,
+    "max_length": 2048,
+    "max_alternatives": 8,
+    "micro_batch_size": 1,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 0.0002,
+    "num_train_epochs": 1,
+    "max_steps": 200,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "target_modules": "all-linear",
+    "seed": 17,
+    "save_steps": 50,
+    "logging_steps": 10,
+    "precision": "fp32"
+  },
+  "memory_implementation_revision": {
+    "reason": "Initial attempt ran out of MPS memory at optimizer step 37 before any checkpoint; no model evaluation had started.",
+    "completion_logits_only": true,
+    "mps_empty_cache_steps": 1,
+    "invariant": "Same answer-token set likelihood, seed, model and all learning hyperparameters; validate numerical equivalence before rerun. Do not disable the MPS memory limit."
+  },
+  "objective": "Negative log total sequence probability of all acceptable next decisions; final assistant tokens only.",
+  "overflow_policy": "Fail before training; do not truncate away answers or silently remove records.",
+  "primary_evaluation": "Held-out closed-loop success with independent state/invariant checks; compare unfine-tuned same model and non-neural baselines.",
+  "secondary_evaluation": [
+    "Query cost per successful episode",
+    "Unnecessary changes on no-drift tasks",
+    "Incorrect execution in unidentifiable cases",
+    "Candidate-scoring inference latency",
+    "Training cost and checkpoint reproducibility"
+  ],
+  "interpretation": "One 135M model and one training seed establish an engineering experiment only. Training loss alone cannot establish Agent capability or the research hypothesis."
+}

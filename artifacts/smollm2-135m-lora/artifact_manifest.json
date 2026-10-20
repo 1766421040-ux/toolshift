@@ -1,0 +1,81 @@
+{
+  "artifact_type": "peft_lora_adapter",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "base_model_files_sha256": {
+    "config.json": "8eb740e8bbe4cff95ea7b4588d17a2432deb16e8075bc5828ff7ba9be94d982a",
+    "model.safetensors": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c"
+  },
+  "base_model_revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "excluded": [
+    "base-model weights",
+    "optimizer",
+    "scheduler",
+    "RNG state",
+    "full checkpoints",
+    "training_args.bin"
+  ],
+  "format_version": 1,
+  "included_asset_sha256": {
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "NOTICE": "a185b771c3b8fe183ec14277bad957ab1b6be559074f8b8d17430e677f383f39",
+    "adapter_config.json": "da5b0d3d4d233930ef0ace43989adc2541a7a9306e948237720fe2331c4ad373",
+    "adapter_model.safetensors": "7db5f902b6e56b5441aa72ea2e31480ebc9205fd7ea8c939afa0204df3372df2",
+    "chat_template.jinja": "872be49dbb638044ad01b60388f48d469ff2980e5f0dccdc22ec907db54d0788",
+    "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+    "special_tokens_map.json": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52",
+    "tokenizer.json": "7d27c493c729a66ecefc837280b05d948b1ed50d130eebdbf911b1b36cf38ed7",
+    "tokenizer_config.json": "5690731cd8f365f3af5458defee4d5de1a67cd39ce97695979cb566272da2992",
+    "vocab.json": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+  },
+  "license": "Apache-2.0",
+  "license_source": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/README.md",
+  "platform": {
+    "machine": "arm64",
+    "release": "27.0.0",
+    "system": "Darwin"
+  },
+  "python_version": "3.12.14",
+  "runtime_packages": {
+    "accelerate": "1.15.0",
+    "huggingface-hub": "0.36.2",
+    "numpy": "2.5.4",
+    "peft": "0.21.2",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.22.2",
+    "torch": "2.14.1",
+    "transformers": "4.57.6"
+  },
+  "training": {
+    "backend": "mps_lora",
+    "config": {
+      "backend": "mps_lora",
+      "completion_logits_only": true,
+      "gradient_accumulation_steps": 2,
+      "learning_rate": 0.0002,
+      "local_files_only": true,
+      "logging_steps": 10,
+      "lora_alpha": 16,
+      "lora_dropout": 0.0,
+      "lora_r": 8,
+      "max_alternatives": 8,
+      "max_length": 2048,
+      "max_steps": 200,
+      "micro_batch_size": 1,
+      "mps_empty_cache_steps": 1,
+      "num_train_epochs": 1,
+      "precision": "fp32",
+      "save_steps": 50,
+      "seed": 17,
+      "target_modules": "all-linear"
+    },
+    "independent_train_groups": 81,
+    "objective": "negative_log_total_probability_of_acceptable_completions",
+    "optimizer_steps": 200,
+    "original_decision_exposures": 400,
+    "records_available": 1053,
+    "seed": 17,
+    "trainable_parameters": 2442240,
+    "training_jsonl_sha256": "f43f99ef5d6f42962bdb00a88c89263087eda571590032450f0d7a2729924f2e",
+    "training_summary_sha256": "253a1f55dcdc05083df2074202524c0ca72c19473949b075357efa7598565b54"
+  }
+}

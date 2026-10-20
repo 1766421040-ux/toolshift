@@ -1,0 +1,20 @@
+{
+  "acceptable_alternatives_max": 4,
+  "assistant_prefix_check_passed": true,
+  "family_overlap_with_dev_or_test": false,
+  "full_tokens_max": 1162,
+  "full_tokens_median": 1088.0,
+  "full_tokens_min": 961,
+  "protocol_commit": "2dfe27618c0ed8289c2e62ae0e18b13a25826ef5",
+  "protocol_sha256": "d7f6076beae9572cecf57641c6f20ba32ec9893823dd3dbd60c78e7693502fda",
+  "runtime_sources_sha256": {
+    "model_policy.py": "79c3f6bc0a9aed5d6e63bb892f451799789ee856be79ce8f38cebffa65d9a7da",
+    "training.py": "d77da9e721ce7a1f547f34e949275e6a4bb2fad68be37a34901bb22dd06c06ac"
+  },
+  "supervised_tokens_max": 56,
+  "supervised_tokens_min": 11,
+  "training_groups": 81,
+  "training_jsonl_sha256": "f43f99ef5d6f42962bdb00a88c89263087eda571590032450f0d7a2729924f2e",
+  "training_records": 1053,
+  "truncated_records": 0
+}

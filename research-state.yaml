@@ -1,0 +1,68 @@
+project: ToolShift
+route: P2_action_sufficient_evidence_acquisition
+mode: execution
+user_authorized:
+  implementation: true
+  local_experiments: true
+  github_publication: true
+  github_owner: 1766421040-ux
+  github_visibility: public
+  paid_compute: false
+stage: validation_and_publication
+resource:
+  design_target: single_24GB_GPU
+  available_host: Apple_M4_Pro_24GB_unified_memory
+  cuda_available: false
+hypotheses:
+  H1: Action sufficiency can require less evidence than complete version identification.
+  H2: Safety must include future common completion, not only immediate invariant checks.
+  H3: Learned acquisition outperforms strong deployable static policies at matched safe completion.
+claims:
+  engineering_complete: false
+  llm_training_executed: true
+  benchmark_results_available: true
+  novelty_established: false
+evidence:
+  cpu_v1:
+    heldout_episodes: 1258
+    source_groups: 74
+    static_matches_finite_oracle: true
+    static_query_cost_reduction_vs_refresh: 0.6078431373
+    learned_linear_beats_static: false
+  coupled_diagnostics:
+    cases: 67
+    actual_worlds: 374
+    policy_episodes: 1870
+    action_sufficiency_lower_worst_cost_vs_version_cases: 17
+    trained_model: false
+  lora:
+    model: SmolLM2-135M-Instruct
+    backend: MPS_fp32
+    seeds: [17]
+    optimizer_steps: 200
+    train_record_exposures: 400
+    evaluation_episodes: 51
+    evaluation_source_groups: 13
+    evaluation_status: complete
+    base_actual_successes: 0
+    adapter_actual_successes: 23
+    adapter_robust_successes: 8
+    adapter_invariant_violations: 15
+    adapter_queries: 0
+    hypothesis_learning_advantage_supported: false
+  tests:
+    standard_library_total: 84
+    passed: 83
+    optional_skipped: 1
+    python312_with_training_dependencies_total: 84
+    python312_passed: 84
+    python312_skipped: 0
+scope:
+  unknown_support_discovery: not_implemented
+  external_database_benchmark: not_reproduced
+  cuda_qlora: not_run
+  diagnostic_structure_holdout_learning: not_run
+  all_planned_teacher_ablations: not_run
+next:
+  - Audit published files, publish source and evidence, verify GitHub CI.
+

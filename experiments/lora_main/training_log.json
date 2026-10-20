@@ -1,0 +1,148 @@
+{
+  "source": "local final checkpoint-200/trainer_state.json",
+  "global_step": 200,
+  "epoch": 0.3798670465337132,
+  "log_history": [
+    {
+      "epoch": 0.01899335232668566,
+      "grad_norm": 23.224647521972656,
+      "learning_rate": 0.000191,
+      "loss": 19.3583,
+      "step": 10
+    },
+    {
+      "epoch": 0.03798670465337132,
+      "grad_norm": 11.191423416137695,
+      "learning_rate": 0.000181,
+      "loss": 5.2394,
+      "step": 20
+    },
+    {
+      "epoch": 0.05698005698005698,
+      "grad_norm": 16.113977432250977,
+      "learning_rate": 0.000171,
+      "loss": 2.5112,
+      "step": 30
+    },
+    {
+      "epoch": 0.07597340930674264,
+      "grad_norm": 10.26851749420166,
+      "learning_rate": 0.000161,
+      "loss": 1.2889,
+      "step": 40
+    },
+    {
+      "epoch": 0.0949667616334283,
+      "grad_norm": 2.2793524265289307,
+      "learning_rate": 0.000151,
+      "loss": 2.3446,
+      "step": 50
+    },
+    {
+      "epoch": 0.11396011396011396,
+      "grad_norm": 2.7911558151245117,
+      "learning_rate": 0.000141,
+      "loss": 2.4663,
+      "step": 60
+    },
+    {
+      "epoch": 0.13295346628679963,
+      "grad_norm": 17.462024688720703,
+      "learning_rate": 0.000131,
+      "loss": 1.8856,
+      "step": 70
+    },
+    {
+      "epoch": 0.15194681861348527,
+      "grad_norm": 16.506969451904297,
+      "learning_rate": 0.000121,
+      "loss": 1.8187,
+      "step": 80
+    },
+    {
+      "epoch": 0.17094017094017094,
+      "grad_norm": 15.09756088256836,
+      "learning_rate": 0.00011100000000000001,
+      "loss": 1.4522,
+      "step": 90
+    },
+    {
+      "epoch": 0.1899335232668566,
+      "grad_norm": 6.947608947753906,
+      "learning_rate": 0.000101,
+      "loss": 1.2642,
+      "step": 100
+    },
+    {
+      "epoch": 0.20892687559354226,
+      "grad_norm": 7.28094482421875,
+      "learning_rate": 9.1e-05,
+      "loss": 1.7695,
+      "step": 110
+    },
+    {
+      "epoch": 0.22792022792022792,
+      "grad_norm": 4.757025241851807,
+      "learning_rate": 8.1e-05,
+      "loss": 1.1953,
+      "step": 120
+    },
+    {
+      "epoch": 0.24691358024691357,
+      "grad_norm": 10.260306358337402,
+      "learning_rate": 7.1e-05,
+      "loss": 1.4358,
+      "step": 130
+    },
+    {
+      "epoch": 0.26590693257359926,
+      "grad_norm": 11.007894515991211,
+      "learning_rate": 6.1e-05,
+      "loss": 1.4819,
+      "step": 140
+    },
+    {
+      "epoch": 0.2849002849002849,
+      "grad_norm": 19.418962478637695,
+      "learning_rate": 5.1000000000000006e-05,
+      "loss": 1.0185,
+      "step": 150
+    },
+    {
+      "epoch": 0.30389363722697055,
+      "grad_norm": 16.16825294494629,
+      "learning_rate": 4.1e-05,
+      "loss": 1.5917,
+      "step": 160
+    },
+    {
+      "epoch": 0.32288698955365625,
+      "grad_norm": 12.02859878540039,
+      "learning_rate": 3.1e-05,
+      "loss": 1.0728,
+      "step": 170
+    },
+    {
+      "epoch": 0.3418803418803419,
+      "grad_norm": 12.704802513122559,
+      "learning_rate": 2.1e-05,
+      "loss": 0.7878,
+      "step": 180
+    },
+    {
+      "epoch": 0.36087369420702753,
+      "grad_norm": 13.502968788146973,
+      "learning_rate": 1.1000000000000001e-05,
+      "loss": 1.6342,
+      "step": 190
+    },
+    {
+      "epoch": 0.3798670465337132,
+      "grad_norm": 15.010588645935059,
+      "learning_rate": 1.0000000000000002e-06,
+      "loss": 1.1327,
+      "step": 200
+    }
+  ],
+  "note": "Logged training diagnostics at 10-step intervals; not held-out metrics. No optimizer or model state is included."
+}

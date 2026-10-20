@@ -1,0 +1,118 @@
+{
+  "backend": "mps_lora",
+  "evaluation": "No held-out labels were used; rollout evaluation is separate.",
+  "manifest": {
+    "base_model_identity": {
+      "local_files_sha256": {
+        "config.json": "8eb740e8bbe4cff95ea7b4588d17a2432deb16e8075bc5828ff7ba9be94d982a",
+        "model.safetensors": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c"
+      }
+    },
+    "chat_template_sha256": "872be49dbb638044ad01b60388f48d469ff2980e5f0dccdc22ec907db54d0788",
+    "config": {
+      "backend": "mps_lora",
+      "gradient_accumulation_steps": 2,
+      "learning_rate": 0.0002,
+      "local_files_only": true,
+      "logging_steps": 1,
+      "lora_alpha": 16,
+      "lora_dropout": 0.0,
+      "lora_r": 8,
+      "max_alternatives": 8,
+      "max_length": 2048,
+      "max_steps": 4,
+      "micro_batch_size": 1,
+      "model_name_or_path": "LOCAL_SNAPSHOT/SmolLM2-135M-Instruct",
+      "num_train_epochs": 1,
+      "precision": "fp32",
+      "revision": null,
+      "save_steps": 2,
+      "seed": 17,
+      "target_modules": "all-linear"
+    },
+    "dataset_sha256": "f7f1ac58ff5f9d699e4895349c3c45034aad9cee6b28cf2054c45bf3c448eb69",
+    "format_version": 1,
+    "packages": {
+      "accelerate": "1.15.0",
+      "bitsandbytes": "not-installed",
+      "peft": "0.21.2",
+      "torch": "2.14.1",
+      "transformers": "4.57.6"
+    },
+    "tokenizer_vocabulary_sha256": "33b7dd0ab4327c920591a9b8d479821d62d9585690dabe107eff2c8b8892cf23",
+    "train_rows": 8
+  },
+  "metrics": {
+    "epoch": 1.0,
+    "total_flos": 11119669694208.0,
+    "train_loss": 31.122478008270264,
+    "train_runtime": 17.2805,
+    "train_samples_per_second": 0.463,
+    "train_steps_per_second": 0.231
+  },
+  "model_type": "causal_lm_lora",
+  "objective": "negative_log_total_probability_of_acceptable_completions",
+  "peak_cuda_allocated_bytes": null,
+  "peak_cuda_reserved_bytes": null,
+  "preflight": {
+    "assistant_prefix_check_passed": true,
+    "device": "mps",
+    "full_tokens_max": 1098,
+    "full_tokens_median": 1087.0,
+    "full_tokens_min": 966,
+    "max_acceptable_alternatives": 4,
+    "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "record_ids": [
+      "46cdf38b7074ac813c83c2a2014492c69904f5443d5fac3d4b980ded8fc1cfc4",
+      "1ef650c30ad01a6715aac5533a74c7cfb6e8ae7a81b019856840f1030566e757",
+      "63804edf7687fb14dbf4a9c892cdfa45b53b0e8448818ed47b73872837b08ad2",
+      "e97f16915a10353ceaee0a2b2e017efb7e1feb74fcce05284a0d4c22a1b659dd",
+      "7ad027db063f51d61239676355fa6768cdc7bd6bda4ca18c8e6d044bf26a851f",
+      "91d1effd6bf24f8dc0e941e911aec1746ff164dbeabe0fd85dde07842e43bdd0",
+      "f5e97851097a8fbc0c34f446c9407135e065b5e609e9f783ab5e00a88a68eeef",
+      "4b58b3b6afc32af65639b817473ca1613c5d34cd4f62ca09e93d80c5a13a5b6c"
+    ],
+    "selected_training_groups": 2,
+    "selected_training_records": 8,
+    "supervised_tokens_max": 53,
+    "supervised_tokens_min": 18,
+    "truncated_records": 0
+  },
+  "smoke_scope": "Four optimizer steps validate execution, not Agent capability.",
+  "status": "trained_lora",
+  "step_measurements": [
+    {
+      "mps_allocated_bytes_after_step": 568428288,
+      "mps_driver_bytes_after_step": 4161159168,
+      "seconds": 6.296331999998074,
+      "step": 1
+    },
+    {
+      "mps_allocated_bytes_after_step": 568507392,
+      "mps_driver_bytes_after_step": 8764080128,
+      "seconds": 5.279835624969564,
+      "step": 2
+    },
+    {
+      "mps_allocated_bytes_after_step": 568454400,
+      "mps_driver_bytes_after_step": 9647833088,
+      "seconds": 2.8533303750446066,
+      "step": 3
+    },
+    {
+      "mps_allocated_bytes_after_step": 568429056,
+      "mps_driver_bytes_after_step": 9800335360,
+      "seconds": 2.363027250044979,
+      "step": 4
+    }
+  ],
+  "timing_estimate": {
+    "caveat": "Estimate holds only for comparable lengths/alternatives and excludes evaluation; four steps cannot establish steady-state throughput.",
+    "estimated_200_step_seconds_from_smoke": 570.6660750089213,
+    "measured_optimizer_steps": 4,
+    "median_seconds_excluding_first_step": 2.8533303750446066
+  },
+  "total_model_parameters": 136957248,
+  "trainable_parameters": 2442240,
+  "training_seconds": 17.467069083009847
+}

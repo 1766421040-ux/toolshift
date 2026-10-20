@@ -1,0 +1,22 @@
+{
+  "attempt": 1,
+  "status": "failed_out_of_memory",
+  "last_completed_optimizer_step": 37,
+  "target_optimizer_steps": 200,
+  "backend": "mps",
+  "memory_error": {
+    "mps_allocated_gib": 7.8,
+    "other_allocations_gib": 21.56,
+    "allowed_gib": 30.19,
+    "additional_request_mib": 864
+  },
+  "checkpoint_available": false,
+  "heldout_model_evaluation_started": false,
+  "response": [
+    "Keep original seed and all learning hyperparameters.",
+    "Materialize only answer-prediction LM-head logits while preserving full attention context.",
+    "Release unused MPS cache after each optimizer step.",
+    "Never disable the MPS memory limit.",
+    "Validate against full-logit updates before restarting from step 0."
+  ]
+}

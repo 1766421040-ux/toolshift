@@ -1,0 +1,21 @@
+{
+  "model_name_or_path": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "revision": null,
+  "local_files_only": true,
+  "backend": "mps_lora",
+  "max_length": 2048,
+  "max_alternatives": 8,
+  "micro_batch_size": 1,
+  "gradient_accumulation_steps": 2,
+  "learning_rate": 0.0002,
+  "num_train_epochs": 1,
+  "max_steps": 4,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.0,
+  "target_modules": "all-linear",
+  "seed": 17,
+  "save_steps": 2,
+  "logging_steps": 1,
+  "precision": "fp32"
+}

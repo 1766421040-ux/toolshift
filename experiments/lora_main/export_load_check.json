@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "source_export_weights_tokenizer_template_equal": true,
+  "input_split": "train",
+  "input_fields": "public observation only",
+  "choice": {
+    "arguments": {
+      "items": [
+        "museum_244",
+        "museum_217",
+        "museum_207"
+      ],
+      "record_id": "trip_main",
+      "scope": "current"
+    },
+    "name": "update_stops",
+    "type": "act"
+  },
+  "usage": {
+    "score_calls": 1,
+    "candidate_completions": 14,
+    "forward_passes": 14,
+    "nonpadding_input_tokens": 15657,
+    "padded_forward_tokens": 15657,
+    "assistant_tokens_scored": 439,
+    "scoring_wall_seconds": 3.8595619999687187
+  },
+  "load_and_inference_seconds": 5.881579124950804,
+  "final_checkpoint_global_step": 200,
+  "final_checkpoint_matches_exported_weights": true
+}

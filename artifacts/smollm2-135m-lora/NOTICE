@@ -1,0 +1,11 @@
+ToolShift SmolLM2-135M LoRA adapter
+
+The tokenizer assets are from HuggingFaceTB/SmolLM2-135M-Instruct,
+revision 12fd25f77366fa6b3b4b768ec3050bf629380bac, licensed Apache-2.0.
+The adapter weights were trained for ToolShift and are released under
+Apache-2.0. The original base weights are not included.
+adapter_config.json was modified to replace a local filesystem path
+with the canonical base-model ID and pinned revision. Tokenizer metadata
+is normalized when it contains a local name_or_path field.
+The upstream model card is available at:
+https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/README.md
